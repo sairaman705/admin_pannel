@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main_body{
+    width: 100%;
+    /* height: 100vh; */
+    background: rgba(228, 241, 254);
+    position: relative;
+    display: flex;
+}
+
+.top-nav{
+    background-color: rgb(253, 227, 167);
+}
+
+.pages{
+    margin-left: 330px;
+}
+
+.pages .nav-item{
+    padding-right: 50px;
+}
+
+.icon{
+    margin-left: 150px;
+}
+
+.icon:hover{
+    color: #ef8172;
+}
+
+.items{
+    padding: 50px 0 50px 0;
+}
+
+.main_body #menu{
+    width: 300px;
+    height: 100%;
+    background-color: #111827;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo{
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#menu .item{
+    margin-top: 40px;
+}
+
+#menu .item li{
+    padding: 15px 0;
+    list-style: none;
+    transition: 0.3s ease;
+}
+
+#menu .item li:hover{
+    background: #250347;
+    cursor: pointer;
+}
+
+#menu .item li:nth-child(1){
+    border-left: 4px solid #fff;
+}
+
+#menu .item li i{
+    color: rgb(134, 141, 151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .item li:hover i,
+#menu .item li:hover a{
+    color: #fff;
+}
+
+#menu .item li a{
+    text-decoration: none;
+    color: rgb(134, 141, 151);
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+#interface{
+    width: calc(100% - 300px);
+    font-family: 'Oswald', sans-serif;
+    margin-left: 300px;
+    position: relative;
+}
+
+#interface .navigation{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #594ef7;
+    position: fixed;
+    width: calc(100% - 300px);
+}
+
+#interface .navigation .search{
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .search i{
+    margin-right: 14px;
+}
+
+#interface .navigation .search input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+#interface .navigation .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 40px;
+}
+
+#interface .navigation .profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#interface .navigation .profile img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menu-btn{
+    display: none;
+    color: #2b2b2b;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.i-name{
+    color: #4445a3;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.i-name .addCate a{
+    color: #4445a3;
+    float: right;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.values{
+    padding: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.values .val-box{
+    background-color: #fff;
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.values .val-box i{
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.values .val-box:nth-child(1) i{
+    background-color: #250347;
+}
+
+.values .val-box:nth-child(2) i{
+    background-color: #dfff00;
+}
+
+.values .val-box:nth-child(3) i{
+    background-color: #ba55d3;
+}
+
+.values .val-box:nth-child(4) i{
+    background-color: #ff7f00;
+}
+
+.values .val-box .count{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.values .val-box span{
+    font-size: 15x;
+    color: #828997;
+}
+
+.board{
+    width: 94%;
+    margin: 30px 0 30px 0;
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.board img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.board h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.board p{
+    font-weight: 400;
+    font-size: 13px;
+    color: #787d8d;
+}
+
+.board .people{
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom: 1px solid #eef0f3;
+}
+
+thead td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: #f9fafb;
+    text-align: start;
+    padding: 15px;
+}
+
+tbody tr td{
+    padding: 10px 15px;
+}
+
+.edit i,
+.trash i{
+    color: #554cd1;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 769px){
+    .main_body #menu{
+        width: 270px;
+        position: fixed;
+        left: -270px;
+        transition: 0.3s ease;
+    }
+
+    #menu.active{
+        left: 0px;
+    }
+    
+    .main_body #menu-btn{
+        display: initial;
+    }
+
+    #interface {
+        width: 100%;
+        margin-left: 0px;
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+
+    #menu.active~#interface{
+        width: calc(100% - 270px);
+        margin-left: 270px;
+        transition: 0.3s ease;
+    }
+
+    #interface .navigation {
+        width: 100%;
+    }
+
+    .values {
+        padding: 30px 30px 0 30px;
+        justify-content: flex-start;
+    }
+
+    .values .val-box {
+        padding: 16px 20px;
+        margin: 10px 20px 10px 0;
+    }
+}
+
+@media (max-width: 477px){
+    #interface .navigation {
+        padding: 15px;
+    }
+
+    #interface .navigation .search input {
+        width: 150px;
+    }
+
+    .i-name { 
+        padding: 30px 15px 0 15px;
+    }
+
+    .values {
+        padding: 15px 15px 0 15px;
+    }
+
+    .values .val-box{
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+
+@media (max-width: 600px){
+    .pages{
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .search-box{
+        width: 320px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+}
